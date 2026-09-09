@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>adsbook.digital | الاشتراكات الرقمية</title>
-  <meta name="description" content="اطلب اشتراكاتك الرقمية الرسمية فوراً: Canva Pro، CapCut Pro، Shahid VIP، و Google AI Pro بأسعار مميزة في الجزائر." />
+  <meta name="description" content="اطلب اشتراكاتك الرقمية الرسمية فوراً: Canva Pro، CapCut Pro، Shahid VIP، Google AI Pro، و Crunchyroll بأسعار مميزة في الجزائر." />
 
   <!-- Google Fonts: Cairo & Readex Pro for Arabic + Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -79,6 +79,11 @@
       border-color: #3b82f6;
       background: rgba(59, 130, 246, 0.12);
       box-shadow: 0 0 25px rgba(59, 130, 246, 0.35), inset 0 0 15px rgba(59, 130, 246, 0.1);
+    }
+    .plan-card.active-crunchyroll {
+      border-color: #f47521;
+      background: rgba(244, 117, 33, 0.12);
+      box-shadow: 0 0 25px rgba(244, 117, 33, 0.35), inset 0 0 15px rgba(244, 117, 33, 0.1);
     }
 
     .glass-input {
@@ -162,58 +167,55 @@
     </header>
 
     <!-- SECTION 1: Immediate Product Display (Vertical Stack at Top) -->
-    <section class="space-y-3 mb-6" aria-label="Subscription Offers">
+    <section class="space-y-4 mb-6" aria-label="Subscription Offers">
       
       <!-- CARD 1: Canva Pro (3 Years) -->
       <div 
         id="card-canva"
         onclick="handleOfferCardClick('canva')"
-        class="plan-card active-canva relative rounded-2xl glass-card p-3.5 cursor-pointer border active:scale-[0.99] transition-all hover:border-cyan-400/60"
+        class="plan-card active-canva relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all hover:border-cyan-400/60"
       >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
             <!-- Official Canva Logo -->
             <img 
               src="assets/logos/canva-logo.jpg" 
               alt="Canva Pro" 
-              class="w-11 h-11 rounded-xl object-cover shadow-md shadow-cyan-500/25 flex-shrink-0 border border-cyan-400/30" 
+              class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-cover shadow-xl shadow-cyan-500/30 flex-shrink-0 border-2 border-cyan-400/50" 
             />
-            <div>
-              <div class="flex items-center gap-1.5">
-                <h2 class="font-latin font-bold text-sm text-white leading-tight" dir="ltr">Canva Pro (3 Years)</h2>
-                <span class="px-1.5 py-0.5 rounded text-[9px] font-extrabold bg-cyan-500/25 text-cyan-300 border border-cyan-400/40">الأكثر طلباً</span>
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-latin font-black text-lg sm:text-xl text-white leading-tight" dir="ltr">Canva Pro</h2>
+                <span class="px-2.5 py-0.5 rounded-lg text-[11px] font-black bg-cyan-500/25 text-cyan-300 border border-cyan-400/40">الأكثر طلباً 🔥</span>
               </div>
-              <p class="text-[11px] text-slate-300 mt-0.5">حساب رسمي مضمون كامل المدة • 3 سنوات</p>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">حساب رسمي مفعل على إيميلك الشخصي</p>
             </div>
           </div>
 
-          <div class="text-left flex items-center gap-2.5 flex-shrink-0" dir="ltr">
+          <div class="text-left flex items-center gap-3 flex-shrink-0" dir="ltr">
             <div>
-              <span class="font-latin font-extrabold text-base text-white">1900</span>
-              <span class="text-xs font-bold text-cyan-400">DZD</span>
+              <span class="font-latin font-black text-2xl sm:text-3xl text-white">1900</span>
+              <span class="text-xs sm:text-sm font-black text-cyan-400 block -mt-1">DZD</span>
             </div>
-            <div class="radio-indicator w-5 h-5 rounded-full border-2 border-cyan-400 bg-cyan-400 flex items-center justify-center">
-              <svg class="w-3 h-3 text-slate-950 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div class="radio-indicator w-7 h-7 rounded-full border-2 border-cyan-400 bg-cyan-400 flex items-center justify-center shadow-lg shadow-cyan-500/40">
+              <svg class="w-4 h-4 text-slate-950 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M5 13l4 4L19 7" />
               </svg>
             </div>
           </div>
         </div>
 
-        <!-- Interactive Hint Strip -->
-        <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
-          <span class="text-slate-300/80 flex items-center gap-1.5">
-            <svg class="w-3.5 h-3.5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span>انقر لرؤية كافة الميزات والضمان</span>
-          </span>
-          <span class="px-2 py-0.5 rounded-md bg-cyan-500/15 border border-cyan-400/30 text-cyan-300 font-bold text-[10px] flex items-center gap-1">
-            <span>التفاصيل</span>
-            <svg class="w-2.5 h-2.5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- BIG HIGHLIGHTED DURATION STRIP -->
+        <div class="mt-3.5 py-2.5 px-3.5 rounded-2xl bg-gradient-to-r from-cyan-500/20 via-cyan-500/10 to-transparent border border-cyan-400/40 flex items-center justify-between shadow-inner">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="text-xl flex-shrink-0">⏳</span>
+            <div class="flex items-baseline gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-cyan-200/90">مدة الاشتراك:</span>
+              <span class="font-display font-black text-base sm:text-lg text-white">3 سنوات كاملة (36 شهراً)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-emerald-400 bg-emerald-500/15 px-2.5 py-1 rounded-xl border border-emerald-500/30 flex-shrink-0 shadow-sm">
+            🛡️ مضمون 100%
           </span>
         </div>
       </div>
@@ -222,45 +224,45 @@
       <div 
         id="card-capcut"
         onclick="handleOfferCardClick('capcut')"
-        class="plan-card relative rounded-2xl glass-card p-3.5 cursor-pointer border active:scale-[0.99] transition-all hover:border-pink-500/60"
+        class="plan-card relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all hover:border-pink-500/60"
       >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
             <!-- Official CapCut Logo -->
             <img 
               src="assets/logos/capcut-logo.png" 
               alt="CapCut Pro" 
-              class="w-11 h-11 rounded-xl object-contain p-1.5 bg-white shadow-md shadow-white/20 flex-shrink-0 border border-white/20" 
+              class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-contain p-2 bg-white shadow-xl shadow-pink-500/25 flex-shrink-0 border-2 border-pink-400/50" 
             />
-            <div>
-              <h2 class="font-latin font-bold text-sm text-white leading-tight" dir="ltr">CapCut Pro (1 Month)</h2>
-              <p class="text-[11px] text-slate-300 mt-0.5">أدوات الذكاء الاصطناعي وتصدير 4K • شهر واحد</p>
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-latin font-black text-lg sm:text-xl text-white leading-tight" dir="ltr">CapCut Pro</h2>
+                <span class="px-2.5 py-0.5 rounded-lg text-[11px] font-black bg-pink-500/25 text-pink-300 border border-pink-400/40">صناع المحتوى 🎬</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">الذكاء الاصطناعي وتصدير 4K بدون علامة مائية</p>
             </div>
           </div>
 
-          <div class="text-left flex items-center gap-2.5 flex-shrink-0" dir="ltr">
+          <div class="text-left flex items-center gap-3 flex-shrink-0" dir="ltr">
             <div>
-              <span class="font-latin font-extrabold text-base text-white">1800</span>
-              <span class="text-xs font-bold text-slate-300">DZD</span>
+              <span class="font-latin font-black text-2xl sm:text-3xl text-white">1800</span>
+              <span class="text-xs sm:text-sm font-black text-pink-400 block -mt-1">DZD</span>
             </div>
-            <div class="radio-indicator w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
+            <div class="radio-indicator w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
           </div>
         </div>
 
-        <!-- Interactive Hint Strip -->
-        <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
-          <span class="text-slate-300/80 flex items-center gap-1.5">
-            <svg class="w-3.5 h-3.5 text-pink-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span>انقر لرؤية كافة الميزات والضمان</span>
-          </span>
-          <span class="px-2 py-0.5 rounded-md bg-pink-500/15 border border-pink-400/30 text-pink-300 font-bold text-[10px] flex items-center gap-1">
-            <span>التفاصيل</span>
-            <svg class="w-2.5 h-2.5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- BIG HIGHLIGHTED DURATION STRIP -->
+        <div class="mt-3.5 py-2.5 px-3.5 rounded-2xl bg-gradient-to-r from-pink-500/20 via-pink-500/10 to-transparent border border-pink-400/40 flex items-center justify-between shadow-inner">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="text-xl flex-shrink-0">⏳</span>
+            <div class="flex items-baseline gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-pink-200/90">مدة الاشتراك:</span>
+              <span class="font-display font-black text-base sm:text-lg text-white">شهر واحد كامل (30 يوماً)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-emerald-400 bg-emerald-500/15 px-2.5 py-1 rounded-xl border border-emerald-500/30 flex-shrink-0 shadow-sm">
+            🛡️ مضمون 100%
           </span>
         </div>
       </div>
@@ -269,45 +271,45 @@
       <div 
         id="card-shahid"
         onclick="handleOfferCardClick('shahid')"
-        class="plan-card relative rounded-2xl glass-card p-3.5 cursor-pointer border active:scale-[0.99] transition-all hover:border-rose-500/60"
+        class="plan-card relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all hover:border-rose-500/60"
       >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
             <!-- Official Shahid Logo -->
             <img 
               src="assets/logos/shahid-logo.jpg" 
               alt="Shahid VIP" 
-              class="w-11 h-11 rounded-xl object-cover shadow-md shadow-rose-500/20 flex-shrink-0 border border-white/10" 
+              class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-cover shadow-xl shadow-rose-500/25 flex-shrink-0 border-2 border-rose-400/50" 
             />
-            <div>
-              <h2 class="font-latin font-bold text-sm text-white leading-tight" dir="ltr">Shahid VIP (1 Month)</h2>
-              <p class="text-[11px] text-slate-300 mt-0.5">بدون إعلانات وبجودة فائقة HD • شهر واحد</p>
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-latin font-black text-lg sm:text-xl text-white leading-tight" dir="ltr">Shahid VIP</h2>
+                <span class="px-2.5 py-0.5 rounded-lg text-[11px] font-black bg-rose-500/25 text-rose-300 border border-rose-400/40">مسلسلات وأفلام 🍿</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">مشاهدة نقية بدون إعلانات وبأعلى دقة HD</p>
             </div>
           </div>
 
-          <div class="text-left flex items-center gap-2.5 flex-shrink-0" dir="ltr">
+          <div class="text-left flex items-center gap-3 flex-shrink-0" dir="ltr">
             <div>
-              <span class="font-latin font-extrabold text-base text-white">1600</span>
-              <span class="text-xs font-bold text-rose-400">DZD</span>
+              <span class="font-latin font-black text-2xl sm:text-3xl text-white">1600</span>
+              <span class="text-xs sm:text-sm font-black text-rose-400 block -mt-1">DZD</span>
             </div>
-            <div class="radio-indicator w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
+            <div class="radio-indicator w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
           </div>
         </div>
 
-        <!-- Interactive Hint Strip -->
-        <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
-          <span class="text-slate-300/80 flex items-center gap-1.5">
-            <svg class="w-3.5 h-3.5 text-rose-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span>انقر لرؤية كافة الميزات والضمان</span>
-          </span>
-          <span class="px-2 py-0.5 rounded-md bg-rose-500/15 border border-rose-400/30 text-rose-300 font-bold text-[10px] flex items-center gap-1">
-            <span>التفاصيل</span>
-            <svg class="w-2.5 h-2.5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-            </svg>
+        <!-- BIG HIGHLIGHTED DURATION STRIP -->
+        <div class="mt-3.5 py-2.5 px-3.5 rounded-2xl bg-gradient-to-r from-rose-500/20 via-rose-500/10 to-transparent border border-rose-400/40 flex items-center justify-between shadow-inner">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="text-xl flex-shrink-0">⏳</span>
+            <div class="flex items-baseline gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-rose-200/90">مدة الاشتراك:</span>
+              <span class="font-display font-black text-base sm:text-lg text-white">شهر واحد كامل (30 يوماً)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-emerald-400 bg-emerald-500/15 px-2.5 py-1 rounded-xl border border-emerald-500/30 flex-shrink-0 shadow-sm">
+            🛡️ مضمون 100%
           </span>
         </div>
       </div>
@@ -316,45 +318,92 @@
       <div 
         id="card-google"
         onclick="handleOfferCardClick('google')"
-        class="plan-card relative rounded-2xl glass-card p-3.5 cursor-pointer border active:scale-[0.99] transition-all hover:border-blue-500/60"
+        class="plan-card relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all hover:border-blue-500/60"
       >
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <!-- Official Gemini / Google AI Sparkle Logo -->
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <!-- Official Gemini / Google AI Logo -->
             <img 
               src="assets/logos/gemini-logo.png" 
               alt="Google AI Pro (Gemini)" 
-              class="w-11 h-11 rounded-xl object-contain p-1 bg-white shadow-md shadow-blue-500/25 flex-shrink-0 border border-blue-400/30" 
+              class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-contain p-2 bg-white shadow-xl shadow-blue-500/30 flex-shrink-0 border-2 border-blue-400/50" 
             />
-            <div>
-              <h2 class="font-latin font-bold text-sm text-white leading-tight" dir="ltr">Google AI Pro (18 Months)</h2>
-              <p class="text-[11px] text-slate-300 mt-0.5">Gemini Advanced مع مساحة 5TB • 18 شهر</p>
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-latin font-black text-lg sm:text-xl text-white leading-tight" dir="ltr">Google AI Pro</h2>
+                <span class="px-2.5 py-0.5 rounded-lg text-[11px] font-black bg-blue-500/25 text-blue-300 border border-blue-400/40">Gemini + 5TB 🚀</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">Gemini 1.5 Pro مع مساحة سحابية عملاقة 5TB</p>
             </div>
           </div>
 
-          <div class="text-left flex items-center gap-2.5 flex-shrink-0" dir="ltr">
+          <div class="text-left flex items-center gap-3 flex-shrink-0" dir="ltr">
             <div>
-              <span class="font-latin font-extrabold text-base text-white">3200</span>
-              <span class="text-xs font-bold text-blue-400">DZD</span>
+              <span class="font-latin font-black text-2xl sm:text-3xl text-white">3200</span>
+              <span class="text-xs sm:text-sm font-black text-blue-400 block -mt-1">DZD</span>
             </div>
-            <div class="radio-indicator w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
+            <div class="radio-indicator w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
           </div>
         </div>
 
-        <!-- Interactive Hint Strip -->
-        <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[11px]">
-          <span class="text-slate-300/80 flex items-center gap-1.5">
-            <svg class="w-3.5 h-3.5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-            </svg>
-            <span>انقر لرؤية كافة الميزات والضمان</span>
+        <!-- BIG HIGHLIGHTED DURATION STRIP -->
+        <div class="mt-3.5 py-2.5 px-3.5 rounded-2xl bg-gradient-to-r from-blue-500/20 via-blue-500/10 to-transparent border border-blue-400/40 flex items-center justify-between shadow-inner">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="text-xl flex-shrink-0">⏳</span>
+            <div class="flex items-baseline gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-blue-200/90">مدة الاشتراك:</span>
+              <span class="font-display font-black text-base sm:text-lg text-white">18 شهراً (سنة ونصف كاملة)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-emerald-400 bg-emerald-500/15 px-2.5 py-1 rounded-xl border border-emerald-500/30 flex-shrink-0 shadow-sm">
+            🛡️ مضمون 100%
           </span>
-          <span class="px-2 py-0.5 rounded-md bg-blue-500/15 border border-blue-400/30 text-blue-300 font-bold text-[10px] flex items-center gap-1">
-            <span>التفاصيل</span>
-            <svg class="w-2.5 h-2.5 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-            </svg>
+        </div>
+      </div>
+
+      <!-- CARD 5: Crunchyroll (1 Year) -->
+      <div 
+        id="card-crunchyroll"
+        onclick="handleOfferCardClick('crunchyroll')"
+        class="plan-card relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all hover:border-orange-500/60"
+      >
+        <div class="flex items-center justify-between gap-3">
+          <div class="flex items-center gap-3.5 min-w-0">
+            <!-- Official Crunchyroll Logo -->
+            <img 
+              src="assets/logos/crunchyroll-logo.png" 
+              alt="Crunchyroll" 
+              class="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl object-cover shadow-xl shadow-orange-500/30 flex-shrink-0 border-2 border-orange-400/50" 
+            />
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h2 class="font-latin font-black text-lg sm:text-xl text-white leading-tight" dir="ltr">Crunchyroll</h2>
+                <span class="px-2.5 py-0.5 rounded-lg text-[11px] font-black bg-orange-500/25 text-orange-300 border border-orange-400/40">سنة كاملة ⛩️</span>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">أنمي بدون إعلانات وبأعلى دقة فور نزولها</p>
+            </div>
+          </div>
+
+          <div class="text-left flex items-center gap-3 flex-shrink-0" dir="ltr">
+            <div>
+              <span class="font-latin font-black text-2xl sm:text-3xl text-white">3500</span>
+              <span class="text-xs font-black text-orange-400 block -mt-1">DZD</span>
+            </div>
+            <div class="radio-indicator w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center"></div>
+          </div>
+        </div>
+
+        <!-- BIG HIGHLIGHTED DURATION STRIP -->
+        <div class="mt-3.5 py-2.5 px-3.5 rounded-2xl bg-gradient-to-r from-orange-500/20 via-orange-500/10 to-transparent border border-orange-400/40 flex items-center justify-between shadow-inner">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <span class="text-xl flex-shrink-0">⏳</span>
+            <div class="flex items-baseline gap-1.5 flex-wrap">
+              <span class="text-xs font-bold text-orange-200/90">مدة الاشتراك:</span>
+              <span class="font-display font-black text-base sm:text-lg text-white">سنة كاملة (12 شهراً بضمان كامل)</span>
+            </div>
+          </div>
+          <span class="text-xs font-black text-emerald-400 bg-emerald-500/15 px-2.5 py-1 rounded-xl border border-emerald-500/30 flex-shrink-0 shadow-sm">
+            🛡️ مضمون 100%
           </span>
         </div>
       </div>
@@ -422,6 +471,7 @@
               <option value="CapCut Pro (1 Month) - 1800 DZD" class="bg-slate-900 text-white">CapCut Pro (1 Month) - 1800 DZD</option>
               <option value="Shahid VIP (1 Month) - 1600 DZD" class="bg-slate-900 text-white">Shahid VIP (1 Month) - 1600 DZD</option>
               <option value="Google AI Pro (18 Months) - 3200 DZD" class="bg-slate-900 text-white">Google AI Pro (18 Months) - 3200 DZD</option>
+              <option value="Crunchyroll (1 Year) - 3500 DZD" class="bg-slate-900 text-white">Crunchyroll (1 Year) - 3500 DZD</option>
             </select>
             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -453,129 +503,6 @@
     </section>
 
   </main>
-
-  <!-- ============================================================= -->
-  <!-- OFFER DETAILS MODAL WINDOW (Large, Crisp, Rich Specifications) -->
-  <!-- ============================================================= -->
-  <!-- ============================================================= -->
-  <!-- OFFER DETAILS MODAL WINDOW (Big Icon, Big Duration, No Cases/Descriptions) -->
-  <!-- ============================================================= -->
-  <div
-    id="offer-details-modal"
-    class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 modal-backdrop opacity-0 pointer-events-none transition-all duration-300"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="offer-modal-title"
-    onclick="handleDetailsBackdropClick(event)"
-  >
-    <div
-      id="offer-details-box"
-      class="relative w-full max-w-sm sm:max-w-md rounded-3xl glass-card border border-white/20 shadow-2xl bg-slate-950/95 transform scale-95 opacity-0 transition-all duration-300 overflow-hidden flex flex-col items-center text-center p-6 sm:p-7"
-    >
-      <!-- Glowing Top Ambient Bar -->
-      <div id="offer-modal-glow-bar" class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-cyan-400 via-indigo-500 to-pink-500"></div>
-
-      <!-- Close Button (X) -->
-      <button
-        type="button"
-        onclick="closeOfferDetails()"
-        class="absolute top-4 left-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white transition-all z-10"
-        aria-label="إغلاق النافذة"
-      >
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <!-- BIG ICON (Prominent & Glowing - Extra Large) -->
-      <div class="relative mt-2 mb-4">
-        <img
-          id="offer-modal-logo"
-          src="assets/logos/canva-logo.jpg"
-          alt="Offer Logo"
-          class="w-32 h-32 sm:w-36 sm:h-36 rounded-3xl object-cover border-4 shadow-2xl transition-all"
-        />
-        <span id="offer-modal-logo-badge" class="absolute -bottom-2.5 right-1/2 translate-x-1/2 px-3 py-0.5 rounded-full text-[10px] font-black bg-emerald-500 text-slate-950 shadow-xl tracking-wider">
-          OFFICIAL
-        </span>
-      </div>
-
-      <!-- Title & Badge -->
-      <div class="space-y-1 mb-4">
-        <span id="offer-modal-badge" class="inline-block px-3 py-1 rounded-full text-[11px] font-black border">
-          الأكثر طلباً 🔥
-        </span>
-        <h3 id="offer-modal-title" class="font-latin font-black text-2xl sm:text-3xl text-white tracking-wide" dir="ltr">
-          Canva Pro
-        </h3>
-      </div>
-
-      <!-- PROMINENT BIG DURATION LINE (Clear, Bold, Focused) -->
-      <div id="offer-modal-duration-banner" class="w-full py-3.5 px-4 rounded-2xl bg-slate-900/90 border border-white/10 flex items-center justify-between gap-3 mb-4 shadow-lg">
-        <div class="flex items-center gap-3 min-w-0">
-          <span class="text-2xl flex-shrink-0">⏳</span>
-          <div class="text-right min-w-0">
-            <span class="text-[10px] sm:text-[11px] font-bold text-slate-400 block">مدة الاشتراك الرسمية:</span>
-            <span id="offer-modal-duration-big" class="font-display font-black text-base sm:text-lg text-white block truncate">
-              3 سنوات كاملة (36 شهراً)
-            </span>
-          </div>
-        </div>
-        <span class="px-2.5 py-1 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-[11px] font-black flex-shrink-0">
-          🛡️ مضمون 100%
-        </span>
-      </div>
-
-      <!-- BIG PRICE RIBBON -->
-      <div class="w-full py-3 px-4 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-between mb-5">
-        <span class="text-xs text-slate-300 font-bold">السعر النهائي:</span>
-        <div class="flex items-baseline gap-1.5" dir="ltr">
-          <span id="offer-modal-price" class="font-latin font-black text-2xl sm:text-3xl text-cyan-400">1900</span>
-          <span class="font-bold text-sm text-white">DZD</span>
-          <span id="offer-modal-original-price" class="text-xs text-slate-500 line-through mr-1">4500 DZD</span>
-        </div>
-      </div>
-
-      <!-- ACTION BUTTONS -->
-      <div class="w-full space-y-2.5">
-        <!-- Main Select & Order Button -->
-        <button
-          type="button"
-          id="offer-modal-select-btn"
-          onclick="selectOfferFromModal()"
-          class="w-full py-3.5 px-5 rounded-xl font-display font-black text-sm sm:text-base text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-pink-500 hover:from-cyan-400 hover:to-pink-400 shadow-xl shadow-cyan-500/25 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-        >
-          <span id="offer-modal-btn-label">اختيار هذا العرض والطلب الآن ⚡</span>
-          <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-          </svg>
-        </button>
-
-        <!-- Secondary WhatsApp Order Button + Close Button -->
-        <div class="flex items-center gap-2">
-          <button
-            type="button"
-            onclick="orderViaWhatsAppDirectly()"
-            class="flex-1 py-2.5 px-3 rounded-xl text-xs font-bold text-emerald-300 bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 transition-all flex items-center justify-center gap-1.5"
-          >
-            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-            </svg>
-            <span>طلب عبر واتساب</span>
-          </button>
-
-          <button
-            type="button"
-            onclick="closeOfferDetails()"
-            class="py-2.5 px-4 rounded-xl text-xs font-semibold text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 transition-all"
-          >
-            إغلاق
-          </button>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
   <!-- Mobile Confirmation Bottom Sheet / Modal -->
   <div
@@ -624,7 +551,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
         </svg>
         <span>
-          <strong>خطوة أخيرة:</strong> اضغط على الزر الأخضر (أو انتظر ثانيتين) وسيتم فتح واتساب تلقائياً مع <strong>0770 95 30 46</strong> لتأكيد طلبك وتفعيل حسابك فوراً!
+          <strong>خطوة أخيرة:</strong> اضغط على الزر الأخضر (أو انتظر ثانيتين) وسيتم فتح واتساب تلقائياً مع <strong>0770 95 30 58</strong> لتأكيد طلبك وتفعيل حسابك فوراً!
         </span>
       </div>
 
@@ -636,9 +563,9 @@
           class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30"
         >
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.88-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
           </svg>
-          <span>إرسال عبر واتساب (0770 95 30 46)</span>
+          <span>إرسال عبر واتساب (0770 95 30 58)</span>
         </button>
 
         <button
@@ -658,13 +585,12 @@
     /**
      * Configuration:
      * - Webhook URL (Make.com)
-     * - Personal WhatsApp Number (Algeria: 0770953046)
+     * - Personal WhatsApp Number (Algeria: 0770953058)
      */
     const MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/hwowf7m9h3f1wgxz3r4a2zfteoykubqx";
-    const OWNER_PHONE = "213770953046";
+    const OWNER_PHONE = "213770953058";
 
     let activeWhatsAppUrl = "";
-    let currentModalOfferKey = "canva";
 
     /**
      * Complete specifications and rich details for each offer (max 3 key cases per offer)
@@ -824,11 +750,50 @@
           "تسليم فوري ومباشر مع كافة إرشادات الاستخدام",
           "دعم فني جزائري متخصص للمساعدة في أي وقت"
         ]
+      },
+
+      crunchyroll: {
+        id: "card-crunchyroll",
+        activeClass: "active-crunchyroll",
+        dropdownValue: "Crunchyroll (1 Year) - 3500 DZD",
+        brandColor: "#f47521",
+        brandGlow: "rgba(244, 117, 33, 0.4)",
+        badge: "عشاق الأنمي والمانجا ⛩️",
+        badgeColor: "bg-orange-500/25 text-orange-300 border-orange-400/40",
+        logo: "assets/logos/crunchyroll-logo.png",
+        title: "Crunchyroll (1 Year)",
+        durationText: "سنة كاملة (12 شهراً بضمان كامل)",
+        priceDzd: "3500",
+        originalPriceDzd: "6500",
+        tagline: "أضخم مكتبة أنمي في العالم بدون إعلانات وبأعلى دقة مع الحلقات الحصرية فور صدورها في اليابان",
+        howItWorks: "تستلم بيانات الحساب المفعل فوراً عبر واتساب لتسجيل الدخول مباشرة على هاتفك أو شاشتك الذكية (Smart TV) أو الكمبيوتر.",
+        features: [
+          {
+            icon: "⚡",
+            title: "حلقات الأنمي بعد ساعة واحدة من بثها باليابان (Simulcast)",
+            desc: "شاهد أحدث حلقات ون بيس، جوجيتسو كايسن، ديمون سلاير، وسولو ليفلينغ فور صدورها بجودة فائقة 1080p وترجمة عربية احترافية."
+          },
+          {
+            icon: "🚫",
+            title: "مشاهدة نقية 100% بدون إعلانات + تحميل للمشاهدة أوفلاين",
+            desc: "استمتع بمشاهدة متواصلة دون أي فواصل إعلانية، مع إمكانية تحميل الحلقات للمشاهدة في أي وقت ومكان بدون إنترنت."
+          },
+          {
+            icon: "📺",
+            title: "دعم الشاشات الذكية Smart TV والهواتف والحواسيب",
+            desc: "توافق كامل مع أجهزة التلفزيون الذكية، Android، iPhone، iPad، والكمبيوتر، مع حفظ ومزامنة سجل المشاهدة بدقة."
+          }
+        ],
+        guarantees: [
+          "ضمان رسمي كامل طوال مدة الـ 12 شهراً بدون أي انقطاع",
+          "تسليم فوري لبيانات الحساب عبر واتساب في دقائق",
+          "دعم فني جزائري متخصص للمساعدة في أي وقت"
+        ]
       }
     };
 
     /**
-     * Handle tapping an offer card: selects the card and opens the rich details window
+     * Handle tapping an offer card: selects the card only (no modal)
      */
     function handleOfferCardClick(key) {
       const offer = OFFERS_DATA[key];
@@ -836,158 +801,6 @@
 
       // Select offer in the form and highlight card
       pickOffer(offer.dropdownValue, offer.id, offer.activeClass);
-
-      // Open the big detailed modal window
-      openOfferDetails(key);
-    }
-
-    /**
-     * Open and populate the Offer Details Modal
-     */
-    function openOfferDetails(key) {
-      currentModalOfferKey = key;
-      const offer = OFFERS_DATA[key];
-      if (!offer) return;
-
-      // Update brand aesthetics
-      const logo = document.getElementById("offer-modal-logo");
-      if (logo) {
-        logo.src = offer.logo;
-        logo.alt = offer.title;
-        logo.style.borderColor = offer.brandColor;
-        logo.style.boxShadow = `0 0 35px ${offer.brandGlow}`;
-      }
-
-      const glowBar = document.getElementById("offer-modal-glow-bar");
-      if (glowBar) {
-        glowBar.style.background = `linear-gradient(90deg, ${offer.brandColor}, #6366f1, #ec4899)`;
-      }
-
-      // Update texts
-      const badge = document.getElementById("offer-modal-badge");
-      if (badge) {
-        badge.textContent = offer.badge;
-        badge.className = `inline-block px-3 py-1 rounded-full text-[11px] font-black border ${offer.badgeColor}`;
-      }
-
-      const title = document.getElementById("offer-modal-title");
-      if (title) title.textContent = offer.title;
-
-      // Prominent Big Duration Line update
-      const durationBig = document.getElementById("offer-modal-duration-big");
-      if (durationBig) durationBig.textContent = offer.durationText;
-
-      const durationBanner = document.getElementById("offer-modal-duration-banner");
-      if (durationBanner) {
-        durationBanner.style.background = `linear-gradient(90deg, ${offer.brandColor}22 0%, rgba(15, 23, 42, 0.95) 75%, rgba(15, 23, 42, 0.8) 100%)`;
-        durationBanner.style.borderColor = `${offer.brandColor}40`;
-      }
-
-      const price = document.getElementById("offer-modal-price");
-      if (price) {
-        price.textContent = offer.priceDzd;
-        price.style.color = offer.brandColor;
-      }
-
-      const origPrice = document.getElementById("offer-modal-original-price");
-      if (origPrice) origPrice.textContent = `${offer.originalPriceDzd} DZD`;
-
-      // Update CTA button label
-      const btnLabel = document.getElementById("offer-modal-btn-label");
-      if (btnLabel) {
-        btnLabel.textContent = `اختيار هذا العرض والطلب الآن (${offer.priceDzd} DZD) ⚡`;
-      }
-
-      // Animate modal open
-      const modal = document.getElementById("offer-details-modal");
-      const box = document.getElementById("offer-details-box");
-
-      modal.classList.remove("opacity-0", "pointer-events-none");
-      modal.classList.add("opacity-100", "pointer-events-auto");
-
-      box.classList.remove("scale-95", "opacity-0");
-      box.classList.add("scale-100", "opacity-100");
-
-      document.body.style.overflow = "hidden";
-    }
-
-    /**
-     * Close the Offer Details Modal
-     */
-    function closeOfferDetails() {
-      const modal = document.getElementById("offer-details-modal");
-      const box = document.getElementById("offer-details-box");
-
-      modal.classList.remove("opacity-100", "pointer-events-auto");
-      modal.classList.add("opacity-0", "pointer-events-none");
-
-      box.classList.remove("scale-100", "opacity-100");
-      box.classList.add("scale-95", "opacity-0");
-
-      document.body.style.overflow = "";
-    }
-
-    /**
-     * Close on backdrop click
-     */
-    function handleDetailsBackdropClick(event) {
-      const box = document.getElementById("offer-details-box");
-      if (box && !box.contains(event.target)) {
-        closeOfferDetails();
-      }
-    }
-
-    /**
-     * Confirm selection from modal, close modal, and smoothly navigate to order form
-     */
-    function selectOfferFromModal() {
-      const offer = OFFERS_DATA[currentModalOfferKey];
-      if (!offer) return;
-
-      // Ensure offer is selected
-      pickOffer(offer.dropdownValue, offer.id, offer.activeClass);
-
-      // Close modal
-      closeOfferDetails();
-
-      // Smooth scroll to order form and highlight it
-      setTimeout(() => {
-        const form = document.getElementById("mobile-order-form");
-        if (form) {
-          form.scrollIntoView({ behavior: "smooth", block: "center" });
-
-          const formContainer = form.closest("section");
-          if (formContainer) {
-            formContainer.classList.remove("pulse-highlight");
-            void formContainer.offsetWidth; // force browser reflow
-            formContainer.classList.add("pulse-highlight");
-          }
-
-          const nameInput = document.getElementById("fullName");
-          if (nameInput) {
-            setTimeout(() => nameInput.focus(), 350);
-          }
-        }
-      }, 150);
-    }
-
-    /**
-     * Directly initiate WhatsApp order for current modal offer
-     */
-    function orderViaWhatsAppDirectly() {
-      const offer = OFFERS_DATA[currentModalOfferKey];
-      if (!offer) return;
-
-      const textMsg = 
-`*طلب اشتراك مباشر:*
-📦 *العرض:* ${offer.dropdownValue}
-💰 *السعر:* ${offer.priceDzd} DZD
-⏳ *المدة:* ${offer.durationText}
-
-السلام عليكم، أريد الاستفادة من هذا العرض وتفعيل الاشتراك فوراً.`;
-
-      const url = `https://wa.me/${OWNER_PHONE}?text=${encodeURIComponent(textMsg)}`;
-      window.open(url, "_blank");
     }
 
     /**
@@ -995,7 +808,6 @@
      */
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        closeOfferDetails();
         closeMobileModal();
       }
     });
@@ -1009,10 +821,10 @@
 
       // Reset all cards
       document.querySelectorAll(".plan-card").forEach(c => {
-        c.className = "plan-card relative rounded-2xl glass-card p-3.5 cursor-pointer border active:scale-[0.99] transition-all";
+        c.className = "plan-card relative rounded-3xl glass-card p-4 sm:p-5 cursor-pointer border active:scale-[0.99] transition-all";
         const indicator = c.querySelector(".radio-indicator");
         if (indicator) {
-          indicator.className = "radio-indicator w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center";
+          indicator.className = "radio-indicator w-7 h-7 rounded-full border-2 border-slate-600 flex items-center justify-center";
           indicator.innerHTML = "";
         }
       });
@@ -1024,12 +836,26 @@
         const ind = targetCard.querySelector(".radio-indicator");
         if (ind) {
           let dotColor = "border-cyan-400 bg-cyan-400";
-          if (activeClass.includes("capcut")) dotColor = "border-pink-500 bg-pink-500";
-          if (activeClass.includes("shahid")) dotColor = "border-rose-500 bg-rose-500";
-          if (activeClass.includes("google")) dotColor = "border-blue-500 bg-blue-500";
+          let glowShadow = "shadow-cyan-500/40";
+          if (activeClass.includes("capcut")) {
+            dotColor = "border-pink-500 bg-pink-500";
+            glowShadow = "shadow-pink-500/40";
+          }
+          if (activeClass.includes("shahid")) {
+            dotColor = "border-rose-500 bg-rose-500";
+            glowShadow = "shadow-rose-500/40";
+          }
+          if (activeClass.includes("google")) {
+            dotColor = "border-blue-500 bg-blue-500";
+            glowShadow = "shadow-blue-500/40";
+          }
+          if (activeClass.includes("crunchyroll")) {
+            dotColor = "border-orange-500 bg-orange-500";
+            glowShadow = "shadow-orange-500/40";
+          }
 
-          ind.className = `radio-indicator w-5 h-5 rounded-full border-2 ${dotColor} flex items-center justify-center`;
-          ind.innerHTML = `<svg class="w-3 h-3 text-slate-950 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M5 13l4 4L19 7" /></svg>`;
+          ind.className = `radio-indicator w-7 h-7 rounded-full border-2 ${dotColor} flex items-center justify-center shadow-lg ${glowShadow}`;
+          ind.innerHTML = `<svg class="w-4 h-4 text-slate-950 font-bold" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M5 13l4 4L19 7" /></svg>`;
         }
       }
     }
@@ -1046,6 +872,8 @@
         pickOffer(value, "card-shahid", "active-shahid");
       } else if (value.includes("Google")) {
         pickOffer(value, "card-google", "active-google");
+      } else if (value.includes("Crunchyroll")) {
+        pickOffer(value, "card-crunchyroll", "active-crunchyroll");
       }
     }
 
